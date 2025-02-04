@@ -3,7 +3,7 @@ package com.example.aopIntro.commons.aop;
 import org.aspectj.lang.annotation.Pointcut;
 
 public class CommonPointcuts {
-    // class with commonly used pontcuts
+    // class with commonly used pointcuts
 
     // https://docs.spring.io/spring-framework/reference/core/aop/ataspectj/pointcuts.html
 
