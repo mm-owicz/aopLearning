@@ -52,7 +52,27 @@ public class ExampleAspect {
 Aspects can have methods and fields. Can have pointcut, advice, introduction declarations.
 Can't be targets of advice from other aspects.
 
+## Declaring a Pointcut
 
+(predicate that matches join points eg. name of method) \
+in Spring -> matching the execution of methods on Spring beans
+
+two parts:
+- name + parameters
+- pointcut expression - which method? - regular method definition
+
+
+Method name -> pointcut name. Must return void. \
+Expression in () -> pointcut expression, what it matches.
+```java
+@Pointcut("execution(* transfer(..))") // the pointcut expression
+private void anyOldTransfer() {} // the pointcut signature
+```
+in example: matches methods named `transfer`. Has name anyOldTransfer.
+
+__Pointcut designators__
+- execution - default, matching method execution points
+- within - in a module for ex. com.xyz.service..*
 
 
 

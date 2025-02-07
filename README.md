@@ -23,7 +23,7 @@ Spring AOP:
 - action taken by an aspect at a particular join point
 - around, before, after
 - interceptor around the join point
-- 
+
 __Advice types__
 - Before - runs before join point, can't stop execution of join point (unless exception)
 - After returning - after a join point completes normally
@@ -36,7 +36,7 @@ advice parameters -> use specific types, not Objects
 **Pointcut**
 - predicate that matches join points
 - advice runs at any join point matched by the pointcut
-- for example - name of method
+- for example -> name of method
 
 **Introduction**
 - declaring additional methods or fields on behalf of a type
